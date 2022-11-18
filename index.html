@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhior Official</title>
+
+     <link rel="icon" type="image/x-icon" href="/web_statis/dhior/images/dhlogo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <a href="#" class="logo">DHIOR</a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="collections.html">collections</a>
+        <a href="login.html">login</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+    <div class="icons">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-user"></a>
+    </div>
+
+</header>
+
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>DHIOR</h3>
+        <span><b><i> Choose Your Style </i></b></span>
+        <p>Find all your fashion needs, only here! Choose Your Style, and enjoy its many advantages.</p>
+        <a href="collections.html" class="btn">shop now</a>
+    </div>
+    
+</section>
+
+
+<section class="icons-container">
+
+    <div class="row">
+
+        <div class="content">
+            <h3>why choose us?</h3>
+            <p>We provide a wide variety of fashion styles, from children to adults. We commit to monitoring our progress as we move forward, aware that ambitious action is required on all fronts. To blossom new modes of operating, we will work together with our stakeholders to achieve greater positive impact. We commit to monitoring our progress as we move forward, aware that ambitious action is required on all fronts. To blossom new modes of operating, we will work together with our stakeholders to achieve greater positive impact. </p>
+            <p>Moving forward, we will work to achieve a low-carbon redesign of the full range of our products to reduce CO² emissions at every step of their lifecycle, using simpler, lighter, recycled and less-emitting materials, phasing out virgin plastics while aiming toward zero waste. We commit <span class="read-more-text"> to rethinking our logistics to continually reduce associated carbon emissions. This means challenging and optimizing the choice of transportation between air and sea, reducing travel distances and downsizing packaging to reduce volumes transported. Packaging plays an essential role in protecting and preserving the essences of our products while offering a luxurious aesthetic experience. Yet, the use of natural resources to create packaging generates a significant carbon footprint. Moving forward, we commit to blooming new, more sustainable ways of selling.</span></p>
+            <span class="read-more-btn">Read More...</span>
+        </div>
+    </div>
+    <script>
+    const parentContainer =  document.querySelector('.row');
+
+    parentContainer.addEventListener('click', event=>{
+
+    const current = event.target;
+
+    const isReadMoreBtn = current.className.includes('read-more-btn');
+
+    if(!isReadMoreBtn) return;
+
+    const currentText = event.target.parentNode.querySelector('.read-more-text');
+
+    currentText.classList.toggle('read-more-text--show');
+
+    current.textContent = current.textContent.includes('Read More') ? "Read Less..." : "Read More...";
+
+})
+    </script>
+
+    <div class="icons">
+        <img src="images/icon-1.png" alt="">
+        <div class="info">
+            <h3>free delivery</h3>
+            <span>on all orders</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="images/icon-2.png" alt="">
+        <div class="info">
+            <h3>10 days returns</h3>
+            <span>moneyback guarantee</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="images/icon-3.png" alt="">
+        <div class="info">
+            <h3>offer & gifts</h3>
+            <span>on all orders</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="images/icon-4.png" alt="">
+        <div class="info">
+            <h3>secure paymens</h3>
+            <span>protected by paypal</span>
+        </div>
+    </div>
+   
+</section>
+
+
+<section class="container" id="container">
+
+    <div class="artikel-1">
+        <div class="card">
+            <div class="image-section img-one"></div>
+            <article>
+                <h1><a href="https://www.dior.com/en_int/fashion/news-savoir-faire/folder-news-and-events/the-savoir-faire-of-the-dior-empreinte-boots"> The Dhior Empreinte Boots</a></h1>
+                <p> Refined and comfortable, The Dhior Empreinte Boots reflect the excellence of the House's savior-faire</p>
+            </article>
+        </div>
+    </div>
+
+    <div class="artikel-2">
+        <div class="card">
+            <div class="image-section img-two"></div>
+            <article>
+                <h1><a href="https://www.dior.com/en_int/fashion/news-savoir-faire/folder-news-and-events/the-savoir-faire-behind-the-d-trap-belt">The Savior-Faire Behind D-Trap Belt</a></h1>
+                <p> An ode to the art of detail dear of the house, The D-Trap Belt distills Dhior's excellience.</p>
+            </article>
+        </div>
+    </div>
+
+    <div class="artikel-3">
+        <div class="card">
+            <div class="image-section img-three"></div>
+            <article>
+                <h1><a href="https://www.dior.com/en_int/fashion/news-savoir-faire/folder-news-and-events/fall-2022-womens-campaign">Fall 2022 Women's Campaign</a></h1>
+                <p> Dhior unveils image from the campaign for the Fall 2022 collection by Maria Grazia Chiuri.</p>
+            </article>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="review" id="review">
+
+<h1 class="heading"> customer's <span>review</span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>I have ordered and received several items now, and I have to say, I am in love with this store!!!! Everything I have received fit perfectly, and is good quality. I ordered clothes in my size and they were true to size! I would not hesitate to shop this site again, and I tell all of my friends and family to shop this site too!</p>
+        <div class="user">
+            <img src="images/pic-a.png" alt="">
+            <div class="user-info">
+                <h3>70rm12</h3>
+                <span>happy customer</span>
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+    </div>
+
+    <div class="box">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>Full-figured and Fabulous indeed! I just got my order and I LOVE everything! Well-made, flattering and reasonably priced (you know we Americans love a good deal!) Thank you for remembering that we love our curves and want to look like the Divas we are! Just placed ANOTHER order!!</p>
+        <div class="user">
+            <img src="images/pic-a.png" alt="">
+            <div class="user-info">
+                <h3>yjs123</h3>
+                <span>happy customer</span>
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+    </div>
+
+    <div class="box">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>I absolutely adore the trendy styles this store offers. The clothes fit so well and they look amazing on a curvy figure. I really appreciate this option and the quality of the goods is so great that I will order product in the future. Thank you so much for making me feel beautiful!</p>
+        <div class="user">
+            <img src="images/pic-a.png" alt="">
+            <div class="user-info">
+                <h3>jsk_</h3>
+                <span>happy customer</span>
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+    </div>
+
+</div>
+    
+</section>
+
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="collections.html">collections</a>
+            <a href="login.html">login</a>
+            <a href="contact.html">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#">my account</a>
+            <a href="#">my order</a>
+            <a href="#">my favorite</a>
+        </div>
+
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">japan</a>
+            <a href="#">france</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#">+123-456-7890</a>
+            <a href="#">email.kesini@gmail.com</a>
+            <a href="#">Jakarta, Indonesia - 123456</a>
+            <img src="images/payment.png" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> made with blood, sweat, and tears by <span> Dhavina Annawal (11200251000089) </span> | all rights reserved </div>
+
+</section>
+
+    
+</body>
+</html>
